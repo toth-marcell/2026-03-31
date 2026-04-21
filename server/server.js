@@ -1,4 +1,5 @@
 import { compareSync, hashSync } from "bcryptjs";
+import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import JWT from "jsonwebtoken";
@@ -7,6 +8,7 @@ import { Cow, User } from "./models.js";
 dotenv.config();
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.post("/reg", async (req, res) => {

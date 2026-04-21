@@ -1,4 +1,8 @@
 @use "bootstrap";
+
+$bootstrap-icons-font-dir: "bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons";
+
 .input-group > button {
   min-width: 5em;
 }
